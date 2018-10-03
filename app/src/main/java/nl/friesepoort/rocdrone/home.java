@@ -10,6 +10,18 @@ import android.widget.TextView;
 
 public class home extends AppCompatActivity {
 
+//    @Override
+//    public void onBackPressed() {
+//        if (!shouldAllowBack()) {
+//            doSomething();
+//        } else {
+//            super.onBackPressed();
+//        }
+//    }
+//
+//    private boolean shouldAllowBack() {
+//    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +69,7 @@ public class home extends AppCompatActivity {
 
         yourText5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, contact.class));
             }
         });
 
@@ -113,7 +125,7 @@ public class home extends AppCompatActivity {
 
         image5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, contact.class));
             }
         });
 
