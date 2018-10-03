@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/favicon"
-        android:label="ROC Drone's"
+        android:label="ROC Drone&apos;s"
         android:roundIcon="@drawable/favicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -16,11 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".home"></activity>
+        <activity android:name=".home" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".test"></activity>
     </application>
 
 </manifest>
