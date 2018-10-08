@@ -1,6 +1,8 @@
 package nl.friesepoort.rocdrone;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         yourButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, home.class));
+
 
 
         Login.setOnClickListener(new View.OnClickListener() {
@@ -49,18 +51,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+// login function
     private void validate(String userName, String userPassword){
         if((userName.equals("Admin")) && (userPassword.equals("1234"))){
             Intent intent = new Intent(MainActivity.this , home.class);
             startActivity(intent);
         }else{
+            alert();
             counter--;
                 Info.setText("Number of attempts remaining: " + String.valueOf(counter));
             if(counter == 0){
                 Login.setEnabled(false);
             }
         }
+
+    }
+    public void alert(){
+        AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
+        myAlert.setMessage("Wrong username or password")
+            .setPositiveButton("ok", new DialogInterface.OnClickListener(){
+                @Override
+            public void onClick(DialogInterface dialog, int which){
+                    dialog.dismiss();
+                }
+        } )
+                .create();
+            myAlert.show();
 
     }
 
