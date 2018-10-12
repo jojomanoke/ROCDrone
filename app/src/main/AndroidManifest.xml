@@ -23,7 +23,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".test" />
-        <activity android:name=".contact"></activity>
+        <activity android:name=".contact" />
+        <activity android:name=".vluchtplannen" />
     </application>
 
 </manifest>
