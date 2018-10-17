@@ -10,14 +10,15 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@drawable/favicon"
         android:label="ROC Drone&apos;s"
         android:roundIcon="@drawable/favicon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +35,8 @@
         <activity android:name=".test" />
         <activity android:name=".contact" />
         <activity android:name=".Gallerij" />
-        <activity android:name=".vluchtplannen"></activity>
+        <activity android:name=".vluchtplannen" />
+        <activity android:name=".overview"></activity>
     </application>
 
 </manifest>

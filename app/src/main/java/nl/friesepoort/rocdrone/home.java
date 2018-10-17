@@ -73,12 +73,12 @@ public class home extends AppCompatActivity {
             }
         });
 
-        //Documenten
+        //Geregistreerde vluchten
         TextView yourText6 = (TextView) findViewById(R.id.textView6);
 
         yourText6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, overview.class));
             }
         });
 
@@ -94,7 +94,7 @@ public class home extends AppCompatActivity {
         });
 
         //Vlucht plannen
-        ImageView image2 = (ImageView) findViewById(R.id.imageView8);
+        ImageView image2 = (ImageView) findViewById(R.id.imageView22);
 
         image2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -129,12 +129,12 @@ public class home extends AppCompatActivity {
             }
         });
 
-        //Documenten
-        ImageView image6 = (ImageView) findViewById(R.id.imageView22);
+        //Geregistreerde vluchten
+        ImageView image6 = (ImageView) findViewById(R.id.imageView8);
 
         image6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, overview.class));
             }
         });
 
