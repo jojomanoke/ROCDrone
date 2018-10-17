@@ -42,7 +42,7 @@ public class home extends AppCompatActivity {
 
         yourText2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, vluchtplannen.class));
             }
         });
 
