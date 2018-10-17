@@ -28,15 +28,6 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
-        //Uitlog knop
-        TextView yourText = (TextView) findViewById(R.id.textView);
-
-        yourText.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(home.this, MainActivity.class));
-            }
-        });
-
         //Vlucht plannen
         TextView yourText2 = (TextView) findViewById(R.id.textView2);
 
@@ -83,15 +74,6 @@ public class home extends AppCompatActivity {
         });
 
         //Iconen referenties
-
-        //uitloggen
-        ImageView image = (ImageView) findViewById(R.id.imageView3);
-
-        image.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(home.this, MainActivity.class));
-            }
-        });
 
         //Vlucht plannen
         ImageView image2 = (ImageView) findViewById(R.id.imageView22);
