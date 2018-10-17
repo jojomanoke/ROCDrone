@@ -2,13 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nl.friesepoort.rocdrone">
 
-    <!--premissons for camara and harddisk space-->
-    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- premissons for camara and harddisk space -->
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
 
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@drawable/favicon"
         android:label="ROC Drone&apos;s"
@@ -30,7 +33,8 @@
 
         <activity android:name=".test" />
         <activity android:name=".contact" />
-        <activity android:name=".Gallerij"></activity>
+        <activity android:name=".Gallerij" />
+        <activity android:name=".vluchtplannen"></activity>
     </application>
 
 </manifest>
