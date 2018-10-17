@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,10 +58,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this , home.class);
             startActivity(intent);
         }else{
-            alert();
+            Toast toast = Toast.makeText(this, "Wrong username or password", Toast.LENGTH_SHORT  );
+            toast.show();
             counter--;
                 Info.setText("Number of attempts remaining: " + String.valueOf(counter));
             if(counter == 0){
+                alert();
                 Login.setEnabled(false);
             }
         }
@@ -68,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void alert(){
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
-        myAlert.setMessage("Wrong username or password")
+        myAlert.setMessage("Wrong username or password used to many times.")
             .setPositiveButton("ok", new DialogInterface.OnClickListener(){
                 @Override
             public void onClick(DialogInterface dialog, int which){

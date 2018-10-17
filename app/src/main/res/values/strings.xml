@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ROCDrone</string>
+    <string name="title_activity_gallerij">Gallerij</string>
 </resources>

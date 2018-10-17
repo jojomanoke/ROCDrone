@@ -37,7 +37,7 @@ public class home extends AppCompatActivity {
             }
         });
 
-        //Vluch plannen
+        //Vlucht plannen
         TextView yourText2 = (TextView) findViewById(R.id.textView2);
 
         yourText2.setOnClickListener(new View.OnClickListener() {
@@ -60,7 +60,7 @@ public class home extends AppCompatActivity {
 
         yourText4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, Gallerij.class));
             }
         });
 
