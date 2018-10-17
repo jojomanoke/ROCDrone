@@ -40,7 +40,7 @@ public class vluchtplannen extends AppCompatActivity {
             }
         });
 
-        mWebview .loadUrl("http://www.martkrol.nl/");
+        mWebview .loadUrl("http://www.martkrol.nl/forms/submit/progress");
         setContentView(mWebview );
 
     }
