@@ -21,8 +21,8 @@ public class contact extends AppCompatActivity {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto","ehoexum@rocfriesepoort.nl", null));
                 emailIntent.putExtra(Intent.EXTRA_CC, new String[]{});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "body");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "");
+
                 startActivity(Intent.createChooser(emailIntent , "Choose email client"));
             }
         });
@@ -33,8 +33,8 @@ public class contact extends AppCompatActivity {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto","rkuypers@rocfriesepoort.nl", null));
                 emailIntent.putExtra(Intent.EXTRA_CC, new String[]{});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "body");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "");
+
                 startActivity(Intent.createChooser(emailIntent , "Choose email client"));
             }
         });
@@ -45,8 +45,8 @@ public class contact extends AppCompatActivity {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto","bannink@rocfriesepoort.nl", null));
                 emailIntent.putExtra(Intent.EXTRA_CC, new String[]{});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "body");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "");
+
                 startActivity(Intent.createChooser(emailIntent , "Choose email client"));
             }
         });
@@ -57,8 +57,8 @@ public class contact extends AppCompatActivity {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto","dkwakernaak@rocfriesepoort.nl", null));
                 emailIntent.putExtra(Intent.EXTRA_CC, new String[]{});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "body");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "");
+
                 startActivity(Intent.createChooser(emailIntent , "Choose email client"));
             }
         });
@@ -69,8 +69,8 @@ public class contact extends AppCompatActivity {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO ,Uri.fromParts(
                         "mailto","jbisschop@rocfriesepoort.nl", null));
                 emailIntent.putExtra(Intent.EXTRA_CC, new String[]{});
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "body");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "");
+
                 startActivity(Intent.createChooser(emailIntent , "Choose email client"));
             }
         });

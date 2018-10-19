@@ -42,7 +42,7 @@ public class home extends AppCompatActivity {
 
         yourText3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, privedocumenten.class));
             }
         });
 
@@ -89,7 +89,7 @@ public class home extends AppCompatActivity {
 
         image3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(home.this, test.class));
+                startActivity(new Intent(home.this, privedocumenten.class));
             }
         });
 

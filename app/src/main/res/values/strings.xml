@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ROCDrone</string>
     <string name="title_activity_gallerij">Gallerij</string>
+    <string name="title_activity_privedocumenten">Privedocumenten</string>
+    <string name="title_activity_overview">Overzicht</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_vluchtplannen">Vlucht plannen</string>
 </resources>
