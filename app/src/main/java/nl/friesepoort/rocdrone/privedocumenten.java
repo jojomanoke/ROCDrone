@@ -23,9 +23,9 @@ public class privedocumenten extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
 
-                intent.setType("file/*");
+                intent.setType("application/pdf");
 
-                startActivityForResult(intent, 1);
+                startActivityForResult(intent, 0);
             }
         });
     }
